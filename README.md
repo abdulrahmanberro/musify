@@ -1,7 +1,5 @@
 ## Plaese Note
 
-I spent a lot of time trying to figure out how to implement this Project and make it work.
-
 The Design Of This Project Is Inspired From YouTube.
 
 If You have any questions, Don't Hesitate To Contact me On [berrodev@gmail.com]

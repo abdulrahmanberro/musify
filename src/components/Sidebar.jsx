@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { useNavigate, NavLink, Link } from "react-router-dom";
 import { RiCloseLine } from "react-icons/ri";
 import { HiOutlineMenu } from "react-icons/hi";
 
@@ -26,22 +26,24 @@ const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <>
-      <div className="md:flex hidden flex-col w-[240px] py-10 px-4 bg-[#191624]">
-        <h3 className="text-red-600 font-semibold text-center text-3xl tracking-widest ">
-          Musify
-        </h3>
-        <img src={icon} alt="Logo" className="w-full h-14 object-contain" />
+      <div className="cursor-pointer md:flex hidden flex-col w-[240px] py-10 px-4 bg-[#191624]">
+        <Link to="/discover">
+          <h3 className="text-red-600 font-semibold text-center text-3xl tracking-widest ">
+            Musify
+          </h3>
+          <img src={icon} alt="Logo" className="w-full h-14 object-contain" />
+        </Link>
         <NavLinks />
       </div>
       <div className="z-50 absolute md:hidden block top-6 right-3">
         {mobileMenuOpen ? (
           <RiCloseLine
-            className="z-50 w-6 h-6 text-white mr-2"
+            className="z-50 w-6 h-6 text-white mr-2 "
             onClick={() => setMobileMenuOpen(false)}
           />
         ) : (
           <HiOutlineMenu
-            className="z-50 w-6 h-6 text-white mr-2"
+            className="z-50 w-6 h-6 text-white mr-2 "
             onClick={() => setMobileMenuOpen(true)}
           />
         )}
