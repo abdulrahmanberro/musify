@@ -16,12 +16,12 @@ const Searchbar = () => {
     <form
       onSubmit={handleSubmite}
       autoComplete="off"
-      className="focus-within:text-gray-600 p-2 text-gray-400"
+      className="focus-within:text-gray-600 p-2 text-gray-400 mt-[70px]"
     >
       <label htmlFor="search-field" className="sr-only">
         Search All Songs
       </label>
-      <div className="flex felx-row justify-start items-center">
+      <div className="flex felx-row justify-center items-center">
         <FiSearch className="w-5 h-5 ml-4" />
         <input
           name="search-field"
@@ -31,7 +31,7 @@ const Searchbar = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           type="serach"
-          className="flex-1 bg-transparent border-none outline-none placeholder-gray-500 text-base text-whiet p-4"
+          className="flex-1 bg-transparent border-none outline-none placeholder-gray-500 text-base text-white p-4"
         />
       </div>
     </form>
