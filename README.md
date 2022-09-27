@@ -12,7 +12,7 @@ To get started with development, you need to install few tools
 
 1. git
 
-   `git` version 2.13.1 or higher. Download [git]
+   `git` version 2.13.1 or higher.
 
 2. node
 
