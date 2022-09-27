@@ -34,6 +34,9 @@ const Sidebar = () => {
           <img src={icon} alt="Logo" className="w-full h-14 object-contain" />
         </Link>
         <NavLinks />
+        <span className="text-gray-600 text-xs text-center absolute bottom-5 left-2">
+          &copy; Copyright Musify Built By Abdulrahman
+        </span>
       </div>
       <div className="z-50 absolute md:hidden block top-6 right-3">
         {mobileMenuOpen ? (
@@ -59,6 +62,9 @@ const Sidebar = () => {
         </h3>
         <img src={icon} alt="Logo" className="w-full h-14 object-contain" />
         <NavLinks handleClick={() => setMobileMenuOpen(false)} />
+        <span className="text-gray-300 text-xs text-center absolute bottom-5">
+          &copy; Copyright Musify Built By Abdulrahman
+        </span>
       </div>
     </>
   );
